@@ -121,7 +121,7 @@ public interface Resource extends InputStreamSource {
 	File getFile() throws IOException;
 
 	/**
-	 * Return a {@link ReadableByteChannel}.
+	 * Return a {@link ReadableByteChannel}. 可以读取的channel
 	 * <p>It is expected that each call creates a <i>fresh</i> channel.
 	 * <p>The default implementation returns {@link Channels#newChannel(InputStream)}
 	 * with the result of {@link #getInputStream()}.
